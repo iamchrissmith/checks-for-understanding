@@ -17,10 +17,10 @@ It is a web application framework that is written in Ruby and allows us to acces
 
 4. What is MVC?
 
-Model, View, Controller:
-Model - holds our logic and database objects
-View - holds our display for the user
-Controller - dictates the routes for the application
+Model, View, Controller:  
+Model - holds our logic and database objects  
+View - holds our display for the user  
+Controller - dictates the routes for the application  
 
 5. Why do we follow conventions when creating our actions/path names in our Sinatra routes?
 
