@@ -57,6 +57,7 @@ Object Relationship Model - How we tie the database to ruby objects
 16. What's the most commonly used ORM in ruby (Sinatra & Rails)?
 ActiveRecord
 17. Let's say we have an application with restaurants. There are seven verb + path combinations necessary to provide full CRUD functionality for our restaurant application. List each of the seven combinations, and explain what each is for.
+
 Verb | path | description
 --- | --- | ---
 GET | /restaurants/new | display a form to the user to enter new info about the restaurant
