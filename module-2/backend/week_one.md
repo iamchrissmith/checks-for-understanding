@@ -63,7 +63,7 @@ Adapting a website's design/layout to different viewports (screen sizes)
 
 12. What is CRUD and why is it important?
 
-Create, Read, Update, Delete
+Create, Read, Update, Delete  
 Model/framework for us to set our web applications up to interact with databases
 
 13. What does HTTP stand for? 
@@ -72,8 +72,7 @@ Hypertext Transfer Protocol
 
 14. What are the two ways to interpolate Ruby in an ERB view template? What's the difference between these two ways?
 
-`<%= %>` - outputs the Ruby return to the screen
-
+`<%= %>` - outputs the Ruby return to the screen  
 `<% %>` - Runs the ruby without outputing to the screen
 
 15. What's an ORM?
@@ -114,5 +113,5 @@ Waterfall assumes you have perfect knowledge of the future, so once you scope th
 
 22. What is the difference between `#new` and `#create`?
 
-#new creates a new instance of the model
+#new creates a new instance of the model  
 #create creates a new instance of the model and then saves it to the database.
