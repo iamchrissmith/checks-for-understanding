@@ -6,10 +6,10 @@ Note: When you're done, submit a PR.
 
 1. List the five common HTTP verbs and what the purpose is of each verb.
 
-GET - Request something from the server
-POST - Send information up to from the client to the server
-PUT - Update information received by the client by posting it back to the server
-DELETE - Client requests that the server delete information
+GET - Request something from the server  
+POST - Send information up to from the client to the server  
+PUT - Update information received by the client by posting it back to the server  
+DELETE - Client requests that the server delete information  
 
 2. What is Sinatra?
 
