@@ -57,11 +57,24 @@ Object Relationship Model - How we tie the database to ruby objects
 16. What's the most commonly used ORM in ruby (Sinatra & Rails)?
 ActiveRecord
 17. Let's say we have an application with restaurants. There are seven verb + path combinations necessary to provide full CRUD functionality for our restaurant application. List each of the seven combinations, and explain what each is for.
-| Verb | path | description |
-| Get | /restaurants/new | display a form to the user to enter new info about the restaurant |
+Verb | path | description
+--- | --- | ---
+GET | /restaurants/new | display a form to the user to enter new info about the restaurant
+POST | /restaurants |  create a new restaurant
+GET | /restaurants/:id | display details about a restaurant
+GET | /restaurants/:id/edit | display form to allow the user to edit a restaurant
+PUT | /restaurants/:id | update the restaurant information entered by the user
+GET | /restaurants | display all restaurants
+DELETE | /tasks/:id | remove a restaurant record from the db
 
 18. What's a migration? 
+a script we write to tell ActiveRecord how we want to update our database
 19. When you create a migration, does it automatically modify your database?
+no, you must run rake db:migrate
 20. How does a model relate to a database?
+It represents a database table (i.e. the restaurant model above would interact with the restaurants table in the db)
 21. What's the difference between agile workflow and waterfall method?
+Waterfall assumes you have perfect knowledge of the future, so once you scope the project you are done and aren't supposed to revisit the scope when you've moved into design.  Each phase of the project is completed before the next is started (Planning > Design > Development > Testing > Production) and the project is not live/useable until it is fully complete. Agile breaks the project into useable pieces, moves through the project stages for each and can create a MVC at the end of the first which is then added to/updated/enhanced by each subsequent one.
 22. What is the difference between `#new` and `#create`?
+#new creates a new instance of the model
+#create creates a new instance of the model and then saves it to the database.
