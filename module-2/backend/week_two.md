@@ -4,7 +4,8 @@ Fork this respository. Answer the questions to the best of your ability. Try to 
 
 Note: When you're done, submit a PR.
 
-1. At a high level, what is ActiveRecord? What does it do/allow you to do?
+1. At a high level, what is ActiveRecord? What does it do/allow you to do?  
+ActiveRecord is the ORM that is most common with Rails.  It allows you to interact with the database by create SQL queries for you.  
 2. Assume you have the following model:
 
 ```ruby
@@ -12,9 +13,14 @@ class Team << ActiveRecord::Base
 end
 ```
 
-What are some methods you can call on `Team`? If these methods aren't defined in the class, how do you have access to them?
-
-3. Assume that in your database, a team has the following attributes: "id", "name", owner_id". How would you find the name of a team with an id of 4? Assuming your class only included the code from question 2, how could you find the owner of the same team?
+What are some methods you can call on `Team`? If these methods aren't defined in the class, how do you have access to them?  
+`.all`  
+`.count`  
+`.first`  
+We have access to these through inheritance.  
+3. Assume that in your database, a team has the following attributes: "id", "name", owner_id". How would you find the name of a team with an id of 4? Assuming your class only included the code from question 2, how could you find the owner of the same team?  
+`Team.find(4).name`  
+`Owner.find(Team.find(4).owner_id)`  
 
 4. Assume that you added a line to your `Team` class as follows:
 
@@ -25,12 +31,31 @@ end
 ```
 
 Now how would you find the owner of the team with an id of 4?
-
+`Owner.team.name`  
 5. In a database that's holding students and teachers, what will be the relationship between students and teachers? Draw the schema diagram.
-6. Define foreign key, primary key, and schema.
-7. Describe the relationship between a foreign key on one table and a primary key on another table.
-8. What are the parts of an HTTP response?
 
+Students will have one teacher
+Teachers will have many students
+
+Table: Students
+* id
+* name
+* teacher_id
+
+Table: Teachers
+* id
+* name 
+
+6. Define foreign key, primary key, and schema.  
+foreign_key: is the id of a record on another table  
+primary_key: is the unique id of the record for this table  
+schema: is a diagram of a database and its relationships  
+
+7. Describe the relationship between a foreign key on one table and a primary key on another table.  
+They are the same number.  They draw the relationship between the records on different tables.  
+
+8. What are the parts of an HTTP response?
+`GET, POST, UPDATE, PUT, DELETE`  
 
 ### Optional Questions
 
