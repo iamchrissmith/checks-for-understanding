@@ -30,8 +30,8 @@ class Team << ActiveRecord::Base
 end
 ```
 
-Now how would you find the owner of the team with an id of 4?
-`Owner.team.name`  
+Now how would you find the owner of the team with an id of 4?  
+`Team.find(4).owner.name`  
 5. In a database that's holding students and teachers, what will be the relationship between students and teachers? Draw the schema diagram.
 
 Students will have one teacher
