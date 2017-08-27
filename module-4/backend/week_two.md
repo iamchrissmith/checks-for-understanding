@@ -28,13 +28,35 @@ Encapsulation - bind data and functions together in one class
 Watch for code smells, follow SRP, watch for async problems/nested callbacks.
 
 6. What's a callback function and what are some reasons when we use/need callback functions?
+
+A function that gets called from another function when the first is finished executing.  It is a way of chaining actions to create asycronicity.
+
 7. What's the scope of variables in Javascript?
+
+Variables are scoped to their containing closure in JS.
+
 8. What's the difference between `==` and `===` in JavaScript?
+
+`===` checks type as well as equality.
+
 9. Why do front end frameworks exist?
+
+To make it easier to do things in JS.  What would take a line in jQuery might take 10 in vanilla JS.
 
 #### Review  
 
 10. Why do people say "HTTP is stateless"?
+
+Each new request is fresh.  It does not store any memory of the past.
+
 11. Describe a RESTful API.
+
+It is an API that adheres to a specific structuring convention for standard CRUD functions.
+
 12. What are some main characteristics of a team following an agile workflow?
+
+Sprints, flexibility, standups.
+
 13. What are some advantages **and** disadvantages to using OAuth to authenticate a user?
+
+OAuth can be complicated to setup and relies on a third party service for authentication.  However, it can streamline your authentication process and 'outsource' the security of it to a more capable actor.
