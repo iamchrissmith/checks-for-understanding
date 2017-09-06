@@ -62,7 +62,7 @@ Code that is easy to understand what it does and is easy to maintain and extend.
 
 10. If you were building an application that models hotels, what classes would you need? What classes would be responsible for what functionality?
 
-Hotel - Master class, communicates and tracks other classes. Also stores data about the hotel as a whole
+Hotel - Master class, communicates and tracks other classes. Also stores data about the hotel as a whole  
 Room - stores its details and availability
 * This could be an inheritance structure where we have a parent room class and then child classes for sleeping rooms, conference rooms, public rooms, etc.
 People - perhaps we need to model staff, owners, etc.
